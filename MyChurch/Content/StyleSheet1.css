@@ -1,0 +1,36 @@
+﻿/* FOGLIO DI STILE AGGIUNTIVO */
+
+
+/*PAGINA EVENT*/
+
+.eventCard {
+    transition: all 0.3s ease;
+    opacity: 0.7;
+}
+
+.eventCard:hover {
+   transform: scale(1.05);
+   opacity: 1;
+}
+
+/*PAGINA GIVE*/
+
+
+.head-image {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("/Assets/img/give.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.give-container {
+    padding-top: 250px;
+    display: grid;
+    place-items: center;
+    max-width: 560px;
+    z-index: 2;
+    margin: 0 auto;
+    text-align: center;
+}

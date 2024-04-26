@@ -1,0 +1,33 @@
+﻿@model IEnumerable<MyChurch.Models.Event>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div style="background-color:black;padding-top:165px; height:auto; padding-bottom: 80px;">
+    @if (HttpContext.Current.User.IsInRole("Admin"))
+    {
+        <div class="btn btn-outline-light" style="transform: translateX(800%) translateY(-50px);">
+            <a href="@Url.Action("Create")" style="color: inherit; text-decoration: none;">Add New Event</a>
+        </div>
+    }
+    <div class="container">
+        <div class="d-flex flex-wrap justify-content-center">
+            @foreach (var item in Model)
+            {
+                <div class="eventCard mx-2 mb-4" style="background-color: #1f1f1f; overflow:hidden;">
+                    <a href="@Url.Action("Details", new { id=item.IDEvent})" style="color: inherit; text-decoration: none;">
+                        <div style="width: 404px; height: 404px; object-fit: cover; overflow: hidden;" class="mb-2">
+                            <img src="~/Assets/img/@Html.DisplayFor(modelItem => item.FlyerEvent)" style="max-width: 100%; height:auto;" />
+                        </div>
+                        <div class="eventCardbtm py-4 px-2" style="max-width:404px;">
+                            @*<div class="text-primary">@Html.DisplayFor(modelItem => item.DateStartFormatted) - @Html.DisplayFor(modelItem => item.DateEndFormatted)</div>*@
+                            <div class="fs-4 mb-2 text-white">@Html.DisplayFor(modelItem => item.Title)</div>
+                        </div>
+                    </a>
+                </div>
+            }
+
+        </div>
+    </div>
+</div>

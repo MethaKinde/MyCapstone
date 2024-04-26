@@ -1,0 +1,114 @@
+﻿@model IEnumerable<MyChurch.Models.Member>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<style>
+    /* Stile per la tabella */
+    .table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+        .table th,
+        .table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .table td {
+            color: whitesmoke;
+        }
+
+        .table th {
+            background-color: #f2f2f2;
+        }
+
+    /* Stile per i link di azione */
+    .action-links {
+        display: inline-block;
+        margin-right: 5px;
+        color: #007bff;
+        text-decoration: none;
+    }
+
+        .action-links:hover {
+            color: #0056b3;
+        }
+
+    /* Stile per il link "Create New" */
+    .create-link {
+        display: block;
+        margin-bottom: 15px;
+        color: #28a745;
+        text-decoration: none;
+    }
+
+        .create-link:hover {
+            color: #218838;
+        }
+</style>
+
+<div class="container" style="margin-top: 85px;">
+
+    <h2>Members</h2>
+
+    <p>
+        @Html.ActionLink("Create New", "Create", new { @class = "create-link" })
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Ministry1.MinistryType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Lastname)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PhoneNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RegistrationDate)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ministry1.MinistryType)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FirstName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Lastname)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PhoneNumber)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.RegistrationDate)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.IDMember }, new { @class = "action-links" }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.IDMember }, new { @class = "action-links" }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.IDMember }, new { @class = "action-links" })
+                </td>
+            </tr>
+        }
+
+    </table>
+</div>
