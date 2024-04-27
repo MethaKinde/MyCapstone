@@ -17,7 +17,7 @@
 </div>
 
 <div class="container">
-    <div class="d-flex flex-wrap justify-content-between" style="margin-top: 100px;">
+    <div class="d-flex flex-wrap hstack gap-3" style="margin-top: 100px;">
         @foreach (var item in Model)
         {
             <div class="leaderCard mb-5">
@@ -27,7 +27,7 @@
                 <div class="fs-4 fw-bold mb-2 text-white">@Html.DisplayFor(modelItem => item.FirstName) @Html.DisplayFor(modelItem => item.Lastname)</div>
                 <div class="mb-2">@Html.DisplayFor(modelItem => item.Ministry1.MinistryType)</div>
                 @*@Html.ActionLink("Read Bio", "Details", new { id = item.IDLeader })*@
-                <a class="welcome-btn" href="@Url.Action("Details", new { id = item.IDLeader })" style="color: inherit; text-decoration: none; font-size: 0.9rem;">Read Bio<i class="bi bi-arrow-right-short"></i></a>
+            <a class="welcome-btn" href="@Url.Action("Details", new { id = item.IDLeader })" style="color: inherit; text-decoration: none; font-size: 0.9rem; transition: color 0.3s;" onmouseover="this.style.color='white';" onmouseout="this.style.color='inherit';">Read Bio<i class="bi bi-arrow-right-short"></i></a>
             </div>
         }
     </div>
