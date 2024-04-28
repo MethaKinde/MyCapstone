@@ -123,6 +123,7 @@ input {
 
     .form input[type="password"],
     .form input[type="text"],
+    .form input[type="number"],
     .form input[type="submit"] {
         inline-size: 100%;
     }
@@ -155,6 +156,7 @@ input {
     .login label,
     .login input[type="text"],
     .login input[type="password"],
+    .login input[type="number"],
     .login input[type="submit"] {
         border-radius: var(--loginBorderRadus);
         padding: 1rem;
@@ -168,6 +170,7 @@ input {
     }
 
     .login input[type="password"],
+    .login input[type="number"],
     .login input[type="text"] {
         background-color: var(--loginInputBackgroundColor);
         border-bottom-left-radius: 0;
@@ -176,6 +179,8 @@ input {
 
         .login input[type="password"]:focus,
         .login input[type="password"]:hover,
+        .login input[type="number"]:focus,
+        .login input[type="number"]:hover,
         .login input[type="text"]:focus,
         .login input[type="text"]:hover {
             background-color: var(--loginInputHoverBackgroundColor);

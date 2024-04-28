@@ -6,12 +6,14 @@
 
 
 <div class="head-image">
-    <div class="grid">
+    <div class="grid d-grid" style="height: 100vh;">
 
         <div class="give-container">
             <div class="give-amount">
-                <div>Tree of Life Church</div>
-                <div class="fw-bold ">Give</div>
+                <div class="title">
+                    <h1 style="font-family: 'Playfair Display', serif; ">Tree of Life Church</h1>
+                </div>
+                <div class="fw-bold fs-2">Give</div>
 
             </div>
             @using (Html.BeginForm())
@@ -60,7 +62,7 @@
 
                     </div>
 
-                    <div class="form__field">
+                    <div class="form__field justify-content-center">
                         <input type="submit" value="Donate" />
                     </div>
                 </div>
