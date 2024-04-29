@@ -3,5 +3,143 @@
     ViewBag.Title = "About";
 }
 
-<h2>About</h2>
+<style>
+    .image-text-section {
+        background-color: #f9f9f9;
+        padding: 60px 0;
+    }
 
+    .image-text-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .image {
+        flex: 0 0 40%;
+        margin-right: 20px;
+    }
+
+        .image img {
+            width: 100%;
+            height: auto;
+        }
+
+    .text {
+        flex: 0 0 45%;
+    }
+
+        .text h2 {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        .text p {
+            font-size: 24px;
+            line-height: 1.6;
+        }
+    .church-item {
+        flex: 0 0 30%;
+        text-align: center;
+    }
+
+        .church-item img {
+            width: 100%;
+            height: 224px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            object-fit: cover;
+        }
+
+        .church-item h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .church-item p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+</style>
+
+<div class="banner-full banner3 d-grid" style="place-items: center;">
+    <div class="container d-grid text-center" style="place-items: center;">
+        <h2 style="font-family: Arial, Helvetica, sans-serif; font-size: 60px; font-weight: bold; color: white;" >ABOUT TREE OF LIFE</h2>
+    </div>
+</div>
+
+<section class="about" style="background-color: #f2f2f2;">
+    <div class="container text-black text-center" style="height: 350px; padding: 80px 0;">
+        <p style="font-size: 50px; margin: 0;">
+            Tree of Life is a church where the love of God transforms ordinary people into champions!
+        </p>
+    </div>
+</section>
+
+<section class="image-text-section">
+    <div class="container">
+        <div class="image-text-content">
+            <div class="image">
+                <img src="~/Assets/img/contact physique.jpg" alt="Description de l'image">
+            </div>
+            <div class="text">
+                <h2>The Vision</h2>
+                <p>Building men and women who inspire and positively influence their environment for the glory of God and the advancement of humanity.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="banner banner4 believe">
+    <div class="container text-center text-white" style="padding: 60px 0; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">
+        <h2 style="font-size: 50px;">What we believe</h2>
+        <p style="font-size:24px;">We believe that there is only one true God who is the eternal King, Creator, and Redeemer of all that is. He is perfectly holy, just, loving, and truthful. He has revealed Himself to be eternally self-existent – one being in three persons: God the Father, God the Son, and God the Holy Spirit.</p>
+    </div>
+</div>
+
+<section class="mission" style="background-color: #f2f2f2;">
+    <div class="container text-center" style="padding: 50px 0;">
+        <h2 style="font-size: 50px;">Our Mission</h2>
+        <p style="font-size:24px;">
+            Developing purpose-filled Jesus followers
+            Building healthy church communities
+            Creating significant and sustainable social impact
+        </p>
+    </div>
+</section>
+<section class="church-section py-5">
+    <div class="container d-flex justify-content-between align-items-center pt-3">
+        <div class="church-item">
+            <img src="~/Assets/img/ezechiel.jpeg" alt="Image 1">
+            <h2>Discipleship</h2>
+            <p>
+                <ul>
+                    <li>Focused on His Presence</li>
+                    <li>Creating Healthy Families</li>
+                    <li>God's Word Transforms</li>
+                </ul>
+            </p>
+        </div>
+        <div class="church-item">
+            <img src="~/Assets/img/yes-and-amen-main.jpg" alt="Image 2">
+            <h2>Kingdom</h2>
+            <p>
+                <ul>
+                    <li>God Is Still Speaking</li>
+                    <li>Jesus Empowers Supernatural Ministry</li>
+                    <li>His Kingdom Is Advancing</li>
+                </ul>
+            </p>
+        </div>
+        <div class="church-item">
+            <img src="~/Assets/img/gheo.jpeg" alt="Image 3">
+            <h2>Service</h2>
+            <p>
+                <ul>
+                    <li>Honor Affirms Value</li>
+                    <li>Hope in a Glorious Church</li>
+                    <li>Generous Like My Father</li>
+                </ul>
+            </p>
+        </div>
+    </div>
+</section>

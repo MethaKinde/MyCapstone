@@ -201,6 +201,7 @@
     <Content Include="Assets\img\ben_wilson.jpeg" />
     <Content Include="Assets\img\brian_lewis.jpeg" />
     <Content Include="Assets\img\christopher_gonzalez.jpeg" />
+    <Content Include="Assets\img\contact physique.jpg" />
     <Content Include="Assets\img\daniel_lee.jpeg" />
     <Content Include="Assets\img\david_hernandez.jpeg" />
     <Content Include="Assets\img\david_martin.jpeg" />
@@ -210,7 +211,10 @@
     <Content Include="Assets\img\event1.jpg" />
     <Content Include="Assets\img\event2.jpg" />
     <Content Include="Assets\img\event3.jpeg" />
+    <Content Include="Assets\img\ezechiel.jpeg" />
+    <Content Include="Assets\img\gheo.jpeg" />
     <Content Include="Assets\img\give.jpg" />
+    <Content Include="Assets\img\hannah-busing-446334-unsplash-1080x675.jpg" />
     <Content Include="Assets\img\img1.jpg" />
     <Content Include="Assets\img\james_brown.jpeg" />
     <Content Include="Assets\img\jane_smith.jpeg" />
@@ -229,7 +233,10 @@
     <Content Include="Assets\img\sarah_jones.jpeg" />
     <Content Include="Assets\img\stephanie_moore.jpeg" />
     <Content Include="Assets\img\Torino.jpg" />
+    <Content Include="Assets\img\unsplash-image-RA3f0b26qwE.jpg" />
     <Content Include="Assets\img\unsplash_4ct0iDMOjuc.png" />
+    <Content Include="Assets\img\Worship-Background_crop1-1080x675.jpg" />
+    <Content Include="Assets\img\yes-and-amen-main.jpg" />
     <Content Include="Assets\vid\Easy Worship Background.mp4" />
     <Content Include="Assets\vid\HomeChurch.webm" />
     <Content Include="Content\bootstrap-grid.css" />

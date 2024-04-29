@@ -18,8 +18,11 @@ namespace MyChurch.Controllers
         [Authorize(Roles = "Admin")]
         public ActionResult Index()
         {
-            var members = db.Members.Include(m => m.Ministry1);
-            return View(members.ToList());
+            var members = db.Members.Include(m => m.Ministry1).ToList();
+            int totalMembers = members.Count;
+
+            ViewBag.TotalMembers = totalMembers; 
+            return View(members);
         }
 
         // GET: Members/Details/5

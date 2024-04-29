@@ -215,12 +215,27 @@ p {
     background-attachment: fixed; 
 }
 
+.banner-full {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
 .banner1 {
     background-image: url("/Assets/img/Torino.jpg");
 }
 
 .banner2 {
     background-image: url("/Assets/img/unsplash_4ct0iDMOjuc.png");
+}
+
+.banner3 {
+    background-image: url("/Assets/img/hannah-busing-446334-unsplash-1080x675.jpg");
+}
+
+.banner4 {
+    background-image: url("/Assets/img/unsplash-image-RA3f0b26qwE.jpg");
 }
 
 .content {

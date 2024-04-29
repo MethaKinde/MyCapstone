@@ -59,27 +59,37 @@
         @Html.ActionLink("Create New", "Create", new { @class = "create-link" })
     </p>
     <table class="table">
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Ministry1.MinistryType)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FirstName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Lastname)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Email)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.PhoneNumber)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.RegistrationDate)
-            </th>
-            <th></th>
-        </tr>
+        <thead>
+
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Ministry1.MinistryType)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FirstName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Lastname)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Email)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.PhoneNumber)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.RegistrationDate)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th colspan="7" class="text-center">
+                    Total members : @ViewBag.TotalMembers
+                </th>
+            </tr>
+        </tfoot>
 
         @foreach (var item in Model)
         {
