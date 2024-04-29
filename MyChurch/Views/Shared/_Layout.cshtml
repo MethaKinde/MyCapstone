@@ -50,11 +50,15 @@
     </nav>
     <div class="body-content1">
         @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - Applicazione ASP.NET</p>
-        </footer>
+        @*<hr />
+            <footer>
+                <p>&copy; @DateTime.Now.Year - Applicazione ASP.NET</p>
+            </footer>*@
     </div>
+    <hr />
+    <footer class="container">
+        <p>&copy; @DateTime.Now.Year - Applicazione ASP.NET</p>
+    </footer>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
